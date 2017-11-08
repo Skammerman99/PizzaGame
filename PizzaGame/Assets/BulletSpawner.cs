@@ -24,7 +24,7 @@ public class BulletSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.V))
         {
             timer += Time.deltaTime;
             if (timer > .15)
