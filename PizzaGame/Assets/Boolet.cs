@@ -12,6 +12,9 @@ public class Boolet : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("Level")){
+            Destroy(gameObject);
+        }
         if (other.gameObject.CompareTag("Enemy"))
         {
            // Destroy(other.gameObject);

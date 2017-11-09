@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public GameObject spawnPrefab;
+
+
     public float moveSpeed;
     public float jumpHeight;
 
@@ -12,8 +15,11 @@ public class PlayerController : MonoBehaviour {
     public LayerMask whatIsGround;
     private bool grounded;
 
-	// Use this for initialization
-	void Start () {
+    float timer = 0f;
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 
@@ -22,11 +28,27 @@ public class PlayerController : MonoBehaviour {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
     }
 
+    void SpawnMe()
+    {
+        GameObject boolet = (GameObject)Instantiate(spawnPrefab, transform.position, transform.rotation);
+        boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+
+    }
+
     // Update is called once per frame
     void Update () {
 
-        if (Input.GetKeyDown(KeyCode.Space) || 
-            Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        if (Input.GetKey(KeyCode.V))
+        {
+            timer += Time.deltaTime;
+            if (timer > .15)
+            {
+                SpawnMe();
+                timer = 0;
+            }
+
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, jumpHeight);
         }
