@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ThroneRoom.unity
+- path: Assets/DG Test Scene.unity
   isLoaded: 1
   isActive: 1
