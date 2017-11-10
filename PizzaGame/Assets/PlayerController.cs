@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     public GameObject spawnPrefab;
+    public GameObject pepperoni;
 
 
     public float moveSpeed;
     public float jumpHeight;
+    public float pepperoniTimer;
 
     public Transform groundCheck;
     public float groundCheckRadius;
@@ -28,22 +30,35 @@ public class PlayerController : MonoBehaviour {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
     }
 
-    void SpawnMe()
+    void SpawnBoolet()
     {
         GameObject boolet = (GameObject)Instantiate(spawnPrefab, transform.position, transform.rotation);
         boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
 
     }
 
+    void SpawnPepperoni()
+    {
+        GameObject pepperoniShoot = (GameObject)Instantiate(pepperoni, transform.position, transform.rotation);
+        pepperoniShoot.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+    }
+
     // Update is called once per frame
     void Update () {
+
+        if (Input.GetKey(KeyCode.B))
+        {
+            if (!Pepperoni.pepperoniExists){
+                SpawnPepperoni();
+            }
+        }
 
         if (Input.GetKey(KeyCode.V))
         {
             timer += Time.deltaTime;
             if (timer > .15)
             {
-                SpawnMe();
+                SpawnBoolet();
                 timer = 0;
             }
 
