@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
 
     void SpawnPepperoni()
     {
-        GameObject pepperoniShoot = (GameObject)Instantiate(pepperoni, transform.position, transform.rotation);
+        GameObject pepperoniShoot = (GameObject)Instantiate(pepperoni, new Vector3(transform.position.x, transform.position.y+.5f, transform.position.z), transform.rotation);
         pepperoniShoot.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
     }
 
