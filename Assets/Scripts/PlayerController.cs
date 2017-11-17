@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
 
     void SpawnBoolet()
     {
-        GameObject boolet = (GameObject)Instantiate(spawnPrefab, transform.position, transform.rotation);
+        GameObject boolet = (GameObject)Instantiate(spawnPrefab, new Vector3(transform.position.x, transform.position.y-2,transform.position.z), transform.rotation);
         boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
 
     }
