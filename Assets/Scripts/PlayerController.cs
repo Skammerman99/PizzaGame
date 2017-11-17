@@ -32,14 +32,14 @@ public class PlayerController : MonoBehaviour {
 
     void SpawnBoolet()
     {
-        GameObject boolet = (GameObject)Instantiate(spawnPrefab, new Vector3(transform.position.x, transform.position.y-2,transform.position.z), transform.rotation);
+        GameObject boolet = (GameObject)Instantiate(spawnPrefab, transform.position, transform.rotation);
         boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
 
     }
 
     void SpawnPepperoni()
     {
-        GameObject pepperoniShoot = (GameObject)Instantiate(pepperoni, transform.position, transform.rotation);
+        GameObject pepperoniShoot = (GameObject)Instantiate(pepperoni, new Vector3(transform.position.x, transform.position.y+.5f, transform.position.z), transform.rotation);
         pepperoniShoot.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
     }
 
