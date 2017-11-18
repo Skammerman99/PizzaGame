@@ -1,25 +1,9 @@
 fileFormatVersion: 2
 guid: 73f56437c7c13d84aabce39f3266cfdf
-timeCreated: 1510982245
+timeCreated: 1510878859
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: RobotBoyRunSprite_0
-    21300002: RobotBoyRunSprite_1
-    21300004: RobotBoyRunSprite_2
-    21300006: RobotBoyRunSprite_3
-    21300008: RobotBoyRunSprite_4
-    21300010: RobotBoyRunSprite_5
-    21300012: RobotBoyRunSprite_6
-    21300014: RobotBoyRunSprite_7
-    21300016: RobotBoyRunSprite_8
-    21300018: RobotBoyRunSprite_9
-    21300020: RobotBoyRunSprite_10
-    21300022: RobotBoyRunSprite_11
-    21300024: RobotBoyRunSprite_12
-    21300026: RobotBoyRunSprite_13
-    21300028: RobotBoyRunSprite_14
-    21300030: RobotBoyRunSprite_15
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -56,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.06402332, y: 0.92911094}
-  spriteBorder: {x: 0, y: 1763, z: 1772, w: 0}
-  spritePixelsToUnits: 200
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -81,260 +65,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_0
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 1813
-        width: 116
-        height: 209
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_1
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 1801
-        width: 108
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_2
-      rect:
-        serializedVersion: 2
-        x: 644
-        y: 1791
-        width: 99
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_3
-      rect:
-        serializedVersion: 2
-        x: 926
-        y: 1787
-        width: 98
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_4
-      rect:
-        serializedVersion: 2
-        x: 1191
-        y: 1787
-        width: 109
-        height: 219
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_5
-      rect:
-        serializedVersion: 2
-        x: 1449
-        y: 1793
-        width: 117
-        height: 222
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_6
-      rect:
-        serializedVersion: 2
-        x: 1715
-        y: 1809
-        width: 127
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_7
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 1551
-        width: 133
-        height: 199
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_8
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 1541
-        width: 125
-        height: 205
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_9
-      rect:
-        serializedVersion: 2
-        x: 627
-        y: 1521
-        width: 115
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_10
-      rect:
-        serializedVersion: 2
-        x: 917
-        y: 1512
-        width: 103
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_11
-      rect:
-        serializedVersion: 2
-        x: 1204
-        y: 1509
-        width: 95
-        height: 219
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_12
-      rect:
-        serializedVersion: 2
-        x: 1470
-        y: 1509
-        width: 103
-        height: 223
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_13
-      rect:
-        serializedVersion: 2
-        x: 1732
-        y: 1508
-        width: 108
-        height: 232
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_14
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 1248
-        width: 119
-        height: 225
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyRunSprite_15
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 1264
-        width: 119
-        height: 211
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

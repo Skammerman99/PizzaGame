@@ -1,25 +1,9 @@
 fileFormatVersion: 2
 guid: e2b15c28496be73419f79c689e6b919a
-timeCreated: 1510982303
+timeCreated: 1510878862
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: RobotBoyWalkSprite_0
-    21300002: RobotBoyWalkSprite_1
-    21300004: RobotBoyWalkSprite_2
-    21300006: RobotBoyWalkSprite_3
-    21300008: RobotBoyWalkSprite_4
-    21300010: RobotBoyWalkSprite_5
-    21300012: RobotBoyWalkSprite_6
-    21300014: RobotBoyWalkSprite_7
-    21300016: RobotBoyWalkSprite_8
-    21300018: RobotBoyWalkSprite_9
-    21300020: RobotBoyWalkSprite_10
-    21300022: RobotBoyWalkSprite_11
-    21300024: RobotBoyWalkSprite_12
-    21300026: RobotBoyWalkSprite_13
-    21300028: RobotBoyWalkSprite_14
-    21300030: RobotBoyWalkSprite_15
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -56,13 +40,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -81,260 +65,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_0
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 1786
-        width: 99
-        height: 221
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_1
-      rect:
-        serializedVersion: 2
-        x: 357
-        y: 1787
-        width: 97
-        height: 219
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_2
-      rect:
-        serializedVersion: 2
-        x: 637
-        y: 1788
-        width: 94
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_3
-      rect:
-        serializedVersion: 2
-        x: 918
-        y: 1786
-        width: 90
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_4
-      rect:
-        serializedVersion: 2
-        x: 1196
-        y: 1780
-        width: 86
-        height: 226
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_5
-      rect:
-        serializedVersion: 2
-        x: 1471
-        y: 1779
-        width: 85
-        height: 229
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_6
-      rect:
-        serializedVersion: 2
-        x: 1739
-        y: 1789
-        width: 90
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_7
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 1517
-        width: 93
-        height: 218
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_8
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 1515
-        width: 92
-        height: 219
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_9
-      rect:
-        serializedVersion: 2
-        x: 641
-        y: 1512
-        width: 88
-        height: 221
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_10
-      rect:
-        serializedVersion: 2
-        x: 920
-        y: 1510
-        width: 86
-        height: 221
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_11
-      rect:
-        serializedVersion: 2
-        x: 1197
-        y: 1510
-        width: 85
-        height: 221
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_12
-      rect:
-        serializedVersion: 2
-        x: 1471
-        y: 1507
-        width: 86
-        height: 224
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_13
-      rect:
-        serializedVersion: 2
-        x: 1736
-        y: 1504
-        width: 95
-        height: 229
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_14
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 1232
-        width: 101
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: RobotBoyWalkSprite_15
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 1237
-        width: 101
-        height: 223
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 
