@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour {
     public LayerMask whatIsGround;
     private bool grounded;
 
+    private int facing = 0;
+
     float timer = 0f;
 
 
@@ -33,14 +35,36 @@ public class PlayerController : MonoBehaviour {
     void SpawnBoolet()
     {
         GameObject boolet = (GameObject)Instantiate(spawnPrefab, transform.position, transform.rotation);
-        boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+        if (facing == 0)
+        {
+            boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+        }
+        else if (facing == 1)
+        {
+            boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(-10, 0);
+        }
+        else if(facing == 2)
+        {
+            boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(0,10);
+        }else if(facing == 3)
+        {
+            boolet.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -10);
+
+        }
 
     }
 
     void SpawnPepperoni()
     {
         GameObject pepperoniShoot = (GameObject)Instantiate(pepperoni, new Vector3(transform.position.x, transform.position.y+.5f, transform.position.z), transform.rotation);
-        pepperoniShoot.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+        if (facing == 0)
+        {
+            pepperoniShoot.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+        }
+        else if (facing == 1)
+        {
+            pepperoniShoot.GetComponent<Rigidbody2D>().velocity = new Vector2(-10, 0);
+        }
     }
 
     // Update is called once per frame
@@ -63,19 +87,30 @@ public class PlayerController : MonoBehaviour {
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        if (Input.GetKeyDown(KeyCode.C) && grounded)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, jumpHeight);
         }
-        if (Input.GetKey(KeyCode.D) ||
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            facing = 3;
+        }
+        else if (Input.GetKey(KeyCode.D) ||
             Input.GetKey(KeyCode.RightArrow))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-        }
-        if (Input.GetKey(KeyCode.A) ||
+            facing = 0;
+        }else if (Input.GetKey(KeyCode.A) ||
            Input.GetKey(KeyCode.LeftArrow))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            facing = 1;
         }
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            facing = 2;
+        }
+       
     }
 }
