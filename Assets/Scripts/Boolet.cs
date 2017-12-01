@@ -19,6 +19,10 @@ public class Boolet : MonoBehaviour {
         {
            // Destroy(other.gameObject);
         }
+        if (other.gameObject.CompareTag("Door"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

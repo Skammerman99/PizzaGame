@@ -7,6 +7,7 @@ TagManager:
   - Layer
   - Level
   - Enemy
+  - Boolet
   layers:
   - Default
   - TransparentFX
