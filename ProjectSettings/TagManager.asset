@@ -8,6 +8,7 @@ TagManager:
   - Level
   - Enemy
   - Boolet
+  - Door
   layers:
   - Default
   - TransparentFX

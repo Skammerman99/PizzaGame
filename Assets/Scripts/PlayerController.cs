@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     private int facing = 0;
 
     float timer = 0f;
-
+    float delay = 0f;
 
     // Use this for initialization
     void Start () {
@@ -79,13 +79,30 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.V))
         {
-            timer += Time.deltaTime;
-            if (timer > .15)
+                timer += Time.deltaTime;
+            
+
+                if (timer >= .15)
+                {
+                    timer = 0;
+                }
+                if (timer == 0)
+                {
+                    SpawnBoolet();
+                }
+            
+        }
+        if(Input.GetKeyUp(KeyCode.V))
+        {
+            timer = 0;
+            delay = Time.time;
+        }
+        if(Input.GetKeyDown(KeyCode.V))
+        {
+            if(Time.time - delay > .15)
             {
                 SpawnBoolet();
-                timer = 0;
             }
-
         }
         if (Input.GetKeyDown(KeyCode.C) && grounded)
         {
